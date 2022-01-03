@@ -1,0 +1,93 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni"
+			}
+		},
+		{
+			"path": "pages/discover/index",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		},
+		{
+			"path": "pages/chats/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/edit/edit",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/dynamicDetail/dynamicDetail",
+			"style": {
+				"navigationBarTitleText": "正文"
+			}
+		}
+		,
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}
+		
+		
+	],
+	"tabBar":{
+		"color":"#8a8a8a",
+		"selectedColor":"#d81e06",
+		"backgroundColor":"#E9E9E9",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabars/link.png",
+				"selectedIconPath":"static/tabars/link-1.png",
+				"text":"Link"
+			},
+			{
+				"pagePath":"pages/discover/index",
+				"iconPath":"static/tabars/discover.png",
+				"selectedIconPath":"static/tabars/discover-1.png",
+				"text":"发现"
+			},
+			{
+				"pagePath":"pages/chats/index",
+				"iconPath":"static/tabars/chat-1.png",
+				"selectedIconPath":"static/tabars/chat.png",
+				"text":"聊天"
+			},
+			{
+				"pagePath":"pages/me/index",
+				"iconPath":"static/tabars/me.png",
+				"selectedIconPath":"static/tabars/me-1.png",
+				"text":"我的"
+			}
+			
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
