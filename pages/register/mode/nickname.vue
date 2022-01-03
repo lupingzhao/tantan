@@ -18,7 +18,7 @@
 				昵称：
 			</view>
 			<view class="input_item">
-				<input type="text" v-model="nickname" placeholder="请输入昵称(10字以内)" maxlength="10" @blur="blur(1)"/>
+				<input type="text" v-model="nickname" placeholder="请输入昵称(10字以内)" maxlength="10"/>
 			</view>
 			<view class="mb-10">
 				密码：
@@ -53,9 +53,13 @@
 				this.$emit('update:info', 1)
 			},
 			next() {
+				this.$emit('update:info', 3)
 				if(this.phone&&this.password&&this.nickname){
-					this.$emit('update:info', 2)
-				}
+					this.$emit('update:info', 3)
+				}else uni.showToast({
+					title:"请完善信息",
+					icon:"none"
+				})
 			},
 			blur(index){
 				let text=''
@@ -63,15 +67,18 @@
 					if(!this.rules.test(this.phone)){
 						text="请输入正确的手机号"
 					}
-				}else if(index==1){
+				}else if(index==2){
 					if(this.password.length<6){
 						text="密码长度最低为6位"
 					}
 				}
-				uni.showToast({
-					title:text,
-					icon:"none"
-				})
+				if(text){
+					uni.showToast({
+						title:text,
+						icon:"none"
+					})
+				}
+				
 			}
 		},
 		mounted() {
@@ -96,13 +103,6 @@
 		margin: auto;
 	}
 
-	.bor_c {
-		border: 4rpx solid #B3D4FC;
-	}
-
-	.bor_n {
-		border: 4rpx solid #ff0000;
-	}
 .next{
 	position: fixed;
 	bottom: 100rpx;
