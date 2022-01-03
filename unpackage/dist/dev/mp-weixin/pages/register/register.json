@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "basics": "/pages/register/mode/basics",
+    "nicknames": "/pages/register/mode/nickname",
+    "interest": "/pages/register/mode/interest"
+  }
+}

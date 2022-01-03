@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni",
+  "usingComponents": {
+    "card": "/components/card/index"
+  }
+}

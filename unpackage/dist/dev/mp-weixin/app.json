@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discover/index",
+    "pages/chats/index",
+    "pages/me/index",
+    "pages/edit/edit",
+    "pages/dynamicDetail/dynamicDetail",
+    "pages/login/index",
+    "pages/register/register"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#E9E9E9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabars/link.png",
+        "selectedIconPath": "static/tabars/link-1.png",
+        "text": "Link"
+      },
+      {
+        "pagePath": "pages/discover/index",
+        "iconPath": "static/tabars/discover.png",
+        "selectedIconPath": "static/tabars/discover-1.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/chats/index",
+        "iconPath": "static/tabars/chat-1.png",
+        "selectedIconPath": "static/tabars/chat.png",
+        "text": "聊天"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "static/tabars/me.png",
+        "selectedIconPath": "static/tabars/me-1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "将获取您当前位置信息用于配对"
+    }
+  },
+  "usingComponents": {}
+}
