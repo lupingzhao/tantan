@@ -1,7 +1,7 @@
 <template>
 	<view class="p-10">
 		<textarea v-model="text" placeholder="这一刻的想法..."  class="text" maxlength="200"/>
-		<view class="t-a-r m-t-10">
+		<view class="t-a-r m-t-10 mb-10">
 			<button type="primary" @click="push" size="mini" :disabled="!text">发表</button>
 		</view>
 
@@ -40,6 +40,7 @@
 
 <style scoped lang="scss">
 .text{
+	width: 100%;
 	margin-top: 20rpx;
 	border-bottom: 2rpx solid #F1F1F1;
 }

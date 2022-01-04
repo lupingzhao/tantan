@@ -1,11 +1,11 @@
 <template>
 
 	<view class="page" :style="{height:`${sysHeight}px`,width:`${sysWidth}px`}">
-
+		
 		<movable-area class="move-area"
 			:style="{height:`${3*sysHeight}px`,width:`${3*sysWidth}px`,top:`${-sysHeight}px`,left:`${-sysWidth}px` }">
 			<movable-view id="move" class="move-view" v-for="(item,index) in dataList" :key="item._id"
-				:style="{zIndex:`${99999-item._id}`}" direction="all" :x="item.moveX" :y="item.moveY" out-of-bounds
+				:style="{zIndex:`${99999-index}`}" direction="horizontal" :x="item.moveX" :y="item.moveY" out-of-bounds
 				v-if="index<=number" :disabled="index!=0" :animation="item.animation" @tap="tapCard(item)"
 				@touchend="touchend" @touchmove="touchMove" @touchstart="touchStart">
 				<view class="cardBox" :animation="animationData[index]"
@@ -13,6 +13,7 @@
 					<card-box :src="item.src" :number="item.number" :name="item.name" :sex="item.sex"
 						:constellation="item.constellation" :address="item.address" :old="item.old" ref="cardBox">
 					</card-box>
+					<button @click="ch"> 撤回</button>
 				</view>
 			</movable-view>
 		</movable-area>
@@ -30,7 +31,7 @@
 		},
 		data() {
 			return {
-
+del:''
 			}
 		},
 		onLoad() {
@@ -118,6 +119,7 @@
 			},
 			//删除card时
 			delCard(x, y) {
+				this.del=this.dataList[0]
 				if (x > 0 && y > -200) {
 					console.log(this.dataList[0], '喜欢')
 				}
@@ -127,6 +129,9 @@
 				if (x < 0 && y > -200) {
 					console.log(this.dataList[0], '不喜欢')
 				}
+			},
+			ch(){
+				this.dataList.unshift(this.del)
 			},
 			tapCard(e,item) {
 				console.log(item, "点击")

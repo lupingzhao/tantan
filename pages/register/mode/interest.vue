@@ -113,6 +113,7 @@
 
 	.img {
 		width: 40rpx;
+		height: 40rpx;
 		margin-top: 10rpx;
 	}
 
