@@ -1,1 +1,1 @@
-<view class="data-v-2d7ce6f5">demo</view>
+<view class="data-v-2d7ce6f5"><movable-area class="movable-area data-v-2d7ce6f5"><movable-view class="movable-view an data-v-2d7ce6f5" direction="all" out-of-bounds="{{true}}" x="{{x}}" y="{{y}}" data-event-opts="{{[['change',[['change',['$event']]]],['touchend',[['end',['$event']]]]]}}" bindchange="__e" bindtouchend="__e"><view class="{{['p-10','view','data-v-2d7ce6f5',x>30?'an':'']}}">{{'hjkhjk'+index+''}}</view></movable-view></movable-area></view>

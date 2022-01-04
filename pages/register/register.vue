@@ -1,9 +1,9 @@
 <template>
   <view>
     <view class="">
-    	<basics v-if="info==1" :info.sync='info'></basics>
-			<nicknames v-if="info==2" :info.sync='info'></nicknames>
-			<interest v-if="info==3" :info.sync='info'></interest>
+    	<basics v-show="info==1" :info.sync='info'></basics>
+			<nicknames v-show="info==2" :info.sync='info'></nicknames>
+			<interest v-show="info==3" :info.sync='info'></interest>
     </view>
   </view>
 
@@ -18,7 +18,7 @@
     props: {},
     data() {
       return {
-				info:1
+				info:3
 			}
     },
     methods: {

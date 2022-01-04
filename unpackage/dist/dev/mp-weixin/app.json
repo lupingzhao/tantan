@@ -7,7 +7,8 @@
     "pages/edit/edit",
     "pages/dynamicDetail/dynamicDetail",
     "pages/login/index",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/publish/publish"
   ],
   "subPackages": [],
   "window": {
@@ -19,7 +20,7 @@
   "tabBar": {
     "color": "#8a8a8a",
     "selectedColor": "#d81e06",
-    "backgroundColor": "#E9E9E9",
+    "backgroundColor": "#efefef",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -52,5 +53,6 @@
       "desc": "将获取您当前位置信息用于配对"
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

@@ -68,14 +68,14 @@
 
 		},
 		onLoad() {
-
-		},
-		onShow() {
 			if (!uni.getStorageSync('login')) {
 				uni.navigateTo({
 					url: '/pages/login/index'
 				})
 			}
+		},
+		onShow() {
+
 		}
 	}
 </script>

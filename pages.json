@@ -9,7 +9,8 @@
 		{
 			"path": "pages/discover/index",
 			"style": {
-				"navigationBarTitleText": "发现"
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh":true
 			}
 		},
 		{
@@ -48,6 +49,12 @@
 			"style": {
 				"navigationBarTitleText": "注册"
 			}
+		},
+		{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "发布动态"
+			}
 		}
 		
 		
@@ -55,7 +62,7 @@
 	"tabBar":{
 		"color":"#8a8a8a",
 		"selectedColor":"#d81e06",
-		"backgroundColor":"#E9E9E9",
+		"backgroundColor":"#efefef",
 		"list":[
 			{
 				"pagePath":"pages/index/index",

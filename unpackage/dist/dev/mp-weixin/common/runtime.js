@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/card/index":1,"components/dynamic/dynamic":1,"pages/login/components/privacy":1,"pages/register/mode/basics":1,"pages/register/mode/interest":1,"pages/register/mode/nickname":1,"components/card/card-box":1};
+/******/ 		var cssChunks = {"components/card/index":1,"components/dynamic/dynamic":1,"pages/login/components/privacy":1,"pages/register/mode/basics":1,"pages/register/mode/interest":1,"pages/register/mode/nickname":1,"uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker":1,"components/card/card-box":1,"uni_modules/uni-file-picker/components/uni-file-picker/upload-file":1,"uni_modules/uni-file-picker/components/uni-file-picker/upload-image":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/card/index":"components/card/index","components/dynamic/dynamic":"components/dynamic/dynamic","pages/login/components/privacy":"pages/login/components/privacy","pages/register/mode/basics":"pages/register/mode/basics","pages/register/mode/interest":"pages/register/mode/interest","pages/register/mode/nickname":"pages/register/mode/nickname","components/card/card-box":"components/card/card-box"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/card/index":"components/card/index","components/dynamic/dynamic":"components/dynamic/dynamic","pages/login/components/privacy":"pages/login/components/privacy","pages/register/mode/basics":"pages/register/mode/basics","pages/register/mode/interest":"pages/register/mode/interest","pages/register/mode/nickname":"pages/register/mode/nickname","uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker":"uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker","components/card/card-box":"components/card/card-box","uni_modules/uni-file-picker/components/uni-file-picker/upload-file":"uni_modules/uni-file-picker/components/uni-file-picker/upload-file","uni_modules/uni-file-picker/components/uni-file-picker/upload-image":"uni_modules/uni-file-picker/components/uni-file-picker/upload-image"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

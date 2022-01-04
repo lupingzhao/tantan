@@ -48,14 +48,17 @@
   height: 50rpx;
 }
 .item.data-v-403a8b3a {
-  margin: 20rpx;
-  padding: 30rpx;
+  margin: 20rpx 20rpx 30rpx;
+  padding: 20rpx;
   border-radius: 50%;
   text-align: center;
 }
 .isSelect.data-v-403a8b3a {
-  background-color: #F5F2F0;
   -webkit-transform: scaleX(1.2);
           transform: scaleX(1.2);
+}
+.swiper.data-v-403a8b3a {
+  height: 60vh;
+  text-align: center;
 }
 

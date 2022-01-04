@@ -5,7 +5,6 @@ export default {
 			type: 'wgs84',
 			success(res) {
 				console.log(res);
-
 			}
 		})
 	},
